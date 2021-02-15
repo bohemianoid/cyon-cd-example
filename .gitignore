@@ -4,10 +4,10 @@ node_modules
 npm-debug.log
 coverage/
 run
-src/.vuepress/dist/*
-!src/.vuepress/dist/deploy.dist.php
+dist
 .DS_Store
 .nyc_output
 .basement
 config.local.js
 basement_dist
+deploy.php
