@@ -1,0 +1,19 @@
+{
+  "name": "cyon-cd-example",
+  "version": "0.0.1",
+  "description": "Continuous deployment example on a cyon webhosting",
+  "main": "index.js",
+  "authors": {
+    "name": "Simon Roth",
+    "email": "mail@cyon.ch"
+  },
+  "repository": "https://github.com/simonroth/cyon-cd-example/cyon-cd-example",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
