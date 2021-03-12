@@ -1,12 +1,13 @@
 <?php
 
+ignore_user_abort(true);
 ob_start();
 header($_SERVER['SERVER_PROTOCOL'].' 200 OK');
 header('Content-Type: text/plain');
 
 $secret = 'secret';
 
-echo('Start deployment...')
+echo('Start deployment...');
 
 header('Content-Length: '.ob_get_length());
 header('Connection: close');
