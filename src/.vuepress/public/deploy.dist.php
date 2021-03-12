@@ -1,12 +1,15 @@
 <?php
 
 ob_start();
+header($_SERVER['SERVER_PROTOCOL'].' 200 OK');
 header('Content-Type: text/plain');
 
 $secret = 'secret';
 
 echo('Start deployment...')
 
+header('Content-Length: '.ob_get_length());
+header('Connection: close');
 ob_end_flush();
 ob_flush();
 flush();
