@@ -1,8 +1,15 @@
 <?php
 
+ob_start();
 header('Content-Type: text/plain');
 
 $secret = 'secret';
+
+echo('Start deployment...')
+
+ob_end_flush();
+ob_flush();
+flush();
 
 $output[] = 'git pull...';
 exec('git pull', $output);
